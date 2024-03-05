@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetGroceryl.</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background: rgba(119, 170, 192, 0.487);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+
+        .items div {
+            border: 2px solid rgba(0, 0, 0, 0.87);
+            margin: 10px 15px;
+            min-height: 20px;
+        }
+
+        .preview div {
+            border: 2px solid rgba(0, 0, 0, 0.87);
+            margin: 10px 15px;
+            min-height: 20px;
+        }
+
+        .main {
+            height: fit-content;
+        }
+
+        .footer {
+            min-height: 6rem;
+            background: linear-gradient(to top, rgba(51, 60, 187, 0.188), rgba(54, 234, 241, 0.115));
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .footer .side {
+            min-width: fit-content;
+            display: flex;
+            bottom: 100px;
+        }
+
+        .footer .side ul li,
+        a,
+        h4 {
+            padding: 5px;
+            margin: 5px;
+            list-style: none;
+            font-weight: lighter;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+        }
+
+        input {
+            background: transparent;
+            border: none;
+        }
+
+        :where(body,
+            .section,
+            .sidebar, )::-webkit-scrollbar {
+            width: 6px;
+            height: 4px;
+            margin: 10px 0;
+        }
+
+        :where(body,
+            .section,
+            .sidebar, )::-webkit-scrollbar-track {
+            background: transparent;
+            border-radius: 5px;
+        }
+
+        :where(body,
+            .section,
+            .sidebar, )::-webkit-scrollbar-thumb {
+            background: rgba(113, 110, 110, 0.727);
+            border-radius: 25px;
+        }
+
+        .section {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            border: 2px solid rgba(0, 0, 0, 0.036);
+            overflow-x: scroll;
+            white-space: nowrap;
+
+        }
+
+        .item {
+            white-space: no-wrap;
+        }
+
+        .item {
+            width: 400px;
+            height: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <img src="lopo.png" alt="NA" width="30px" height="30px">
+        <label for="query">
+            <input type="Search" placeholder="Search">
+        </label>
+    </div>
+    <div class="preview">
+        <div class="items"></div>
+    </div>
+    <div class="main">
+        <span>
+            <h4>Cerials</h4>
+        </span>
+        <div class="section">
+            <div class="items">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <!-- Repeat the div.item for as many items as needed -->
+            </div>
+        </div>
+
+        <span>
+            <h4>Veges</h4>
+        </span>
+        <div class="section">
+            <div class="items">
+                <div class="item">item1</div>
+                <div class="item">item1</div>
+                <div class="item">item1</div>
+                <div class="item">item1</div>
+                <div class="item">item1</div>
+                <div class="item">item1</div>
+            </div>
+        </div>
+
+        <span>
+            <h4>Fruits</h4>
+        </span>
+        <div class="section">
+            <div class="items">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="side">
+            <ul>
+                <li>
+                    <img src="static/icon.PNG" alt="Logo">
+                </li>
+                <li>
+                    <img src="static/icon.PNG" alt="Logo">
+                </li>
+                <li>
+                    <img src="static/icon.PNG" alt="Logo">
+                </li>
+            </ul>
+        </div>
+        <div class="side">
+            <ul>
+                <li><a href="#">FB</a></li>
+                <li><a href="#">FB</a></li>
+                <li><a href="#">FB</a></li>
+            </ul>
+        </div>
+        <div class="side">
+            <ul>
+                <li><a href="#">FB</a></li>
+                <li><a href="#">FB</a></li>
+                <li><a href="#">FB</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
